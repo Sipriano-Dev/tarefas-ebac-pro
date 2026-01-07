@@ -32,7 +32,10 @@ public class DoublyLinkedList {
         head.prev = newNode;
         head = newNode;
     }
-    
+
+    //Equivalente ao push
+    //Tempo O(1)
+    //Espaço O(1)
     public void addLast(int value) {
         Node newNode = new Node(value);
 
@@ -68,6 +71,9 @@ public class DoublyLinkedList {
         head.prev = null;
     }
 
+    //Equivalente a pop
+    //Tempo O(1)
+    //Espaço O(1)
     public void removeLast() {
 
         // Caso 1: lista vazia
@@ -87,6 +93,8 @@ public class DoublyLinkedList {
         tail.next = null;
     }
 
+    //Tempo O(n)
+    //Espaço O(1)
     public int elementAt(int index) {
         if (index < 0) {
             throw new IndexOutOfBoundsException();
@@ -106,6 +114,8 @@ public class DoublyLinkedList {
         throw new IndexOutOfBoundsException();
     }
 
+    //Tempo O(n)
+    //Espaço O(1)
     public void insert(int index, int value) {
         if (index < 0) {
             throw new IndexOutOfBoundsException();
@@ -136,8 +146,9 @@ public class DoublyLinkedList {
         current.prev.next = newNode;
         current.prev = newNode;
     }
-
-
+    
+    //Tempo O(n)
+    //Espaço O(1)
     public void remove(int index) {
         if (index < 0 || head == null) {
             throw new IndexOutOfBoundsException();

@@ -15,6 +15,8 @@ public class Fila {
     }
 
     //Inserir no final da fila
+    //Tempo O(1) Amortizado
+    //Espaço O(1)
     public void enqueue(int valor) {
         if (size == data.length) {
             resize();
@@ -27,6 +29,8 @@ public class Fila {
     }
 
     //Remover o primeiro da fila
+    //Tempo O(1)
+    //Espaço O(1)
     public void dequeue() {
         if (size == 0) {
             throw new RuntimeException("Fila Vazia!");
@@ -36,6 +40,8 @@ public class Fila {
     }
 
     //Retorna o ultimo da fila, ultimo a entrar
+    //Tempo O(1)
+    //Espaço O(1)
     public int rear() {
         if (size == 0) {
             throw new RuntimeException("Lista vazia");
@@ -44,6 +50,8 @@ public class Fila {
     }
 
     //Retorna o inteiro q ta na frente da fila, primeiro q entrou
+    //Tempo O(1)
+    //Espaço O(1)
     public int front() {
         if (size == 0 ) {
             throw new RuntimeException("Lista vazia");

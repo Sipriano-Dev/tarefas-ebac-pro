@@ -10,6 +10,8 @@ public class Pilha {
         this.size = 0;
     }
 
+    //Tempo O(1) Amortizado
+    //Espaço O(1)
     public void push(int valor) {
         if (size == array.length){
             resize();
@@ -17,6 +19,8 @@ public class Pilha {
         adicionar(valor);
     }
 
+    //Tempo O(1)
+    //Espaço O(1)
     public int pop() {
         if (size == 0) {
             throw new RuntimeException("Pilha vazia");
