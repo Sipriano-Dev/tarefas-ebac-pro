@@ -146,7 +146,7 @@ public class DoublyLinkedList {
         current.prev.next = newNode;
         current.prev = newNode;
     }
-    
+
     //Tempo O(n)
     //Espaço O(1)
     public void remove(int index) {
